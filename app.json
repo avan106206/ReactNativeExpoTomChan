@@ -1,0 +1,12 @@
+{
+  "name": "ReactNativeTomChanProject",
+  "displayName": "ReactNativeTomChanProject",
+  "expo": {
+    "name": "ReactNativeTomChanProject",
+    "slug": "ReactNativeTomChanProject",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
