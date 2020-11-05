@@ -1,0 +1,74 @@
+Flexbox
+
+Reference: https://juejin.im/entry/6844903433384755208
+
+1. Usual attributes
+alignItems, alignSelf, flex, flexDirection, flexWrap, justifyContent
+
+2. Set up the parent View with Flexbox
+
+To use Flexbox, the first thing we need to create, is the parent Flexbox.
+
+There are two attributes needed to be set in the parent Flexbox: a. height and b. flexDirection
+a. height: the height of Flexbox.
+b. flexDirection: The direction the subview inside the Flexbox display.
+c. Example of style of parent View
+  flexStyle:{
+    height:600,
+    flexDirection:'row',
+  }
+
+3. Set up the subView inside parent View
+
+There are two attribute you need to set at least: a. height and b. flex
+a. height: the height of Flexbox.
+b. flex: how much space the subview show use.
+c. Example of style of parent View
+  flexSub:{
+    flex:1,
+    height:300,
+      backgroundColor:'#333333',
+      marginRight:10,
+  },
+
+4. Attrubute: alignItems
+
+ - Define the starting point of render ( alignment )
+
+flex-start：与父组件的顶部对齐。
+flex-end：与父组件的底部对齐。
+center：处于父容器的中间位置。
+stretch：竖直上填充整个容器。
+
+ - Example
+
+flexStyle:{
+    height:600,
+    flexDirection: 'row',
+      alignItems:'flex-start',
+}
+
+5. attribute: justifyContent
+
+ - Define the horizontal display alignment corresponding to the parent View.
+
+* flex-start：伸缩项目与父容器左端靠齐。
+* flex-end：与父容器右端靠齐。
+* center：水平居中。
+* space-between：第一个子组件位于父容器左端，最后一个子组件位于父容器最右端。然后平均分配在父容器水平方向上。
+* space-around：所有子组件平均分配在父容器的水平方向上，左右都有留空隙。
+
+ - Example
+flexStyle:{
+    height:600,
+    width:400,
+    flexDirection: 'row',
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  flexSub:{
+    width:100,
+    height:300,
+      backgroundColor:'#333333',
+      marginBottom:10,
+  },
