@@ -5,10 +5,10 @@ import { View, Text, Image, ScrollView, SafeAreaView, TextInput, StyleSheet } fr
 const GameOne = () => {
 
   let hamster_list: Array<hamster_Info_type> = [
-    {'hamster_id': '0', 'area_id': 'A', 'assets_path': 'assets/img/hamster_game/hamster_1.jpg'},
-    {'hamster_id': '1', 'area_id': 'B', 'assets_path': 'assets/img/hamster_game/hamster_1.jpg'},
-    {'hamster_id': '2', 'area_id': 'C', 'assets_path': 'assets/img/hamster_game/hamster_1.jpg'},
-    {'hamster_id': '3', 'area_id': 'D', 'assets_path': 'assets/img/hamster_game/hamster_1.jpg'},
+    {'hamster_id': '0', 'area_id': 'A', 'assets_path': 'assets/img/hamster/hamster_1.jpg'},
+    {'hamster_id': '1', 'area_id': 'B', 'assets_path': 'assets/img/hamster/hamster_1.jpg'},
+    {'hamster_id': '2', 'area_id': 'C', 'assets_path': 'assets/img/hamster/hamster_1.jpg'},
+    {'hamster_id': '3', 'area_id': 'D', 'assets_path': 'assets/img/hamster/hamster_1.jpg'},
   ]  
 
   const [ hamster_display_list, sethamster_display_list] = useState<hamster_display_list_type>( // the argument can only be hamsterList_type
@@ -18,7 +18,7 @@ const GameOne = () => {
   return (
     <View style = {styles.ParentView}>
       <View style={styles.flexDisplayImgParentView}>
-          <Image style={styles.optionImage} source={require('../../Asset/img/hamster_game/hamster_1.jpg')} />
+          <Image style={styles.optionImage} source={require('../../Asset/img/hamster/hamster_1.jpg')} />
       </View>
       
       <View style={styles.flexQuestionParentView}>

@@ -1,0 +1,22 @@
+TouchableOpacity
+1. A wrapper for making views respond properly to touches.
+
+2. Using with the style to make it work like a interactive button
+<TouchableOpacity
+    style={styles.button}
+    onPress={onPress}
+>
+....
+button: {
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
+    padding: 10
+  }
+
+3. Add inPress function to enable the button to trigger function
+  const [count, setCount] = useState(0);
+  const onPress = () => setCount(prevCount => prevCount + 1);
+
+4. function:
+ - onPress: when pressing on, the event trigger instantly
+ - onPressOut: when release the buttton, the event trigger

@@ -56,3 +56,12 @@ Then run add auth
 
  https://dev-1589119.okta.com/oauth2/default - URL
  0oajruduGcB8Texfh5d5 - ID
+
+
+9. Prepare Redux
+ - npm i -save @types/redux@latest
+ - npm i -save @types/react-redux@latest
+ - npm i -save @types/redux-thunk@latest
+ - npm install --save react-redux
+ - npm install --save redux
+ - npm install --save redux-thunk
