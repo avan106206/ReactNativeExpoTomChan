@@ -1,0 +1,16 @@
+1. Set the type of prop and pass the data into the component
+
+type ButtonProp = {
+    iconName: string,
+    onPress: () => void
+  }
+
+const Button = ( Prop: ButtonProp  ) => {
+    return (
+        <TouchableOpacity>
+            <FontAwesome name={Prop.iconName} size={80} color="#ffffff"/>
+        </TouchableOpacity>
+    );
+};
+
+<Button iconName = "pausecircle" onPress = {() => Alert.alert('start')}/>

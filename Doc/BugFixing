@@ -1,0 +1,4 @@
+1. The dependency is outdated
+ - npm outdated, to check
+ - npm install <package>@latest, to install and update
+ - 

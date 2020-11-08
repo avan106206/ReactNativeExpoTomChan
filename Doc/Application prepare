@@ -1,0 +1,80 @@
+https://www.youtube.com/watch?v=0-S5a0eXPoc
+
+1. expo-cli package:
+npm i -g expo-cli
+
+2. needed vscode plugin
+ - react native tools
+ - React-Native/React/Redux snippets for es6/es7 => generate code really fast.
+ - Prettier - Code formatter => beautify our code. press ctrl+S to format out code.
+
+3. Setting up the react native by expo
+ - expo init DoneWithIt
+ - choose blank + TypeScript
+
+4. folder structure
+asset: put media
+
+5. To start
+using simulator: npm start
+using expo: expo start
+
+5. Running to project and show it on phone via tunnel
+ - npm start
+ - Switch to the hosting port
+ - Choose tunnel mode, and use the phone to scan the QRCODE
+ - The Expo client on the mobile phone will be called to build the app
+
+6. To share the app
+ - push the project to github
+ - https://github.com/avan106206/ReactNativeExpoTomChan
+ - browse https://snack.expo.io/ and import the project from github
+ - set the branch name and the folder than you can import
+
+7. Install native base
+https://docs.nativebase.io/docs/GetStarted.html
+
+
+ - npm install -save @types/react-native-cli, install react native cli
+ - npm install -save native-base, install native base
+ - react-native link, to bind the dependency
+
+8. Install okta library
+
+We use okta as the authetication server, take reference for https://developer.okta.com/blog/2019/11/14/react-native-login
+https://youtu.be/mkT_I5tm3Ig - youtube
+
+Download okta library
+ - npm install --save @okta/okta-react
+ 
+Install oktadev schematics
+ - npm install -D @types/@angular-devkit
+ - npm i -D @angular/material @angular/cdk @angular/animations
+
+Then run add auth
+ - schematics @oktadev/schematics:add-auth
+
+ https://dev-1589119.okta.com/oauth2/default - URL
+ 0oajruduGcB8Texfh5d5 - ID
+
+
+9. Prepare Redux
+ - npm i -save @types/redux@latest
+ - npm i -save @types/react-redux@latest
+ - npm i -save @types/redux-thunk@latest
+ - npm install --save react-redux
+ - npm install --save redux
+ - npm install --save redux-thunk
+
+ 10. React Navigation
+ - expo install react-native-gesture-handler react-native-reanimated 
+ react-native-screens react-native-safe-area-context @react-native-community/masked-view
+ - npm install @react-navigation/native
+ - npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+ - npm install react-navigation
+ - npm install @react-navigation/drawer
+ - npm install @react-navigation/stack
+ - npm install @react-navigation/material-bottom-tabs
+ - npm install @react-navigation/material-top-tabs
+ - npm install react-native-vector-icons/MaterialCommunityIcons
+ - npm install react-native-appearance

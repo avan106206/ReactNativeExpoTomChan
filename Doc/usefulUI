@@ -1,0 +1,7 @@
+1. FontAwesome - select the expo build-in icon
+
+import { FontAwesome } from '@expo/vector-icons'
+<FontAwesome name={iconName} size={80} color="#ffffff"/>
+
+2. Navigation side menu
+
